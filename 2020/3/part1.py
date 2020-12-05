@@ -15,4 +15,3 @@ while pos[0] < len(rows) - 1:
     pos[1] += 3
 
 print(trees)
-

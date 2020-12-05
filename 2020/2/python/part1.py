@@ -1,5 +1,4 @@
 import re
-from os import sys
 
 with open('../input.txt', 'r') as f:
     passwords = f.readlines()
@@ -11,7 +10,7 @@ for password in passwords:
     try:
         min = int(data[0].split('-')[0])
         max = int(data[0].split('-')[1])
-    except:
+    except ValueError:
         continue
 
     letter = data[1][0]
@@ -20,8 +19,7 @@ for password in passwords:
 
     occur = len([m.start() for m in re.finditer(letter, cur)])
 
-
     if min <= occur <= max:
-        count+=1
+        count += 1
 
 print(count)

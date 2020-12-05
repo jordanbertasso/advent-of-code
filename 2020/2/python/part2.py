@@ -8,15 +8,15 @@ for password in passwords:
     try:
         idx1 = int(data[0].split('-')[0])
         idx2 = int(data[0].split('-')[1])
-    except:
+    except ValueError:
         continue
 
     letter = data[1][0]
     cur = data[2].strip()
 
     if cur[idx1 - 1] == letter and cur[idx2 - 1] != letter:
-        count+=1
+        count += 1
     elif cur[idx1 - 1] != letter and cur[idx2 - 1] == letter:
-        count+=1
+        count += 1
 
 print(count)

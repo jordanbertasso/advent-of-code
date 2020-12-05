@@ -27,5 +27,3 @@ print(ans)
 
 res = reduce(lambda x, y: x * y, ans)
 print(res)
-
-

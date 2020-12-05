@@ -8,11 +8,9 @@ for one, two in itertools.product(report_entries, repeat=2):
     try:
         one = int(one.strip())
         two = int(two.strip())
-    except:
+    except ValueError:
         continue
 
     if one + two == 2020:
-        print(one*two)
+        print(one * two)
         sys.exit(0)
-
-

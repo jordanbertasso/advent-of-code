@@ -7,19 +7,18 @@ with open('input.txt', 'r') as f:
 
 fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']
 
+
 def bad_pass(passport):
     for field in fields:
-        try:
-            if not re.findall(field, passport):                
-                return True 
-        except:
-            continue
+        if not re.findall(field, passport):
+            return True
+
 
 count = 0
 for passport in passports:
     if bad_pass(passport):
         continue
     else:
-        count+=1
+        count += 1
 
 print(count)

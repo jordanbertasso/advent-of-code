@@ -5,5 +5,5 @@ with open('../input.txt', 'r') as f:
 
 for one, two, three in itertools.product(report_entries, repeat=3):
     if one + two + three == 2020:
-        print(one*two*three)
+        print(one * two * three)
         break
