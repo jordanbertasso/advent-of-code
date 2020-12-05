@@ -22,12 +22,7 @@ for p in passes:
 
 max = max(ids)
 
-valids = []
-for r in range(127):
-    for c in range(7):
-        valids.append(r * 8 + c)
-
-for valid in valids:
+for valid in range(max):
     if valid not in ids:
         if valid-1 in ids and valid+1 in ids:
             print(f'{id=}')
