@@ -2,14 +2,15 @@ passes = []
 with open('input.txt', 'r') as f:
     passes = list(map(str.strip, f.readlines()))
 
+
 def get_pos(s, min, max, low_char, high_char):
     if s == '':
         return max
-    
+
     if s[0] == low_char:
-        return get_pos(s[1:], min, (min+max)//2, low_char, high_char)
+        return get_pos(s[1:], min, (min + max) // 2, low_char, high_char)
     elif s[0] == high_char:
-        return get_pos(s[1:], (min+max)//2, max, low_char, high_char)
+        return get_pos(s[1:], (min + max) // 2, max, low_char, high_char)
 
 
 ids = []
@@ -24,7 +25,7 @@ max = max(ids)
 
 for valid in range(max):
     if valid not in ids:
-        if valid-1 in ids and valid+1 in ids:
+        if valid - 1 in ids and valid + 1 in ids:
             print(f'{id=}')
 
 print(f'{max=}')

@@ -12,9 +12,9 @@ for group in groups:
         for c in ans:
             cur = s.get(c, 0)
             s[c] = cur + 1
-    
+
     for v in s.values():
         if v == len(group):
             res += 1
-    
+
 print(res)

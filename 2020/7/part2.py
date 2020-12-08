@@ -26,10 +26,11 @@ for rule in rules:
 
 def get_count(bag_type: str):
     sum = 0
-    for k,v in bag_types[bag_type].items():
+    for k, v in bag_types[bag_type].items():
         sum += v
         sum += v * get_count(k)
-    
+
     return sum
+
 
 print(get_count('shiny gold'))

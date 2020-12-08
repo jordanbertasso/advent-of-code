@@ -33,7 +33,7 @@ def contains_gold(bag_type: str):
     for bag_type in bag_types[bag_type].keys():
         if contains_gold(bag_type):
             return True
-    
+
     return False
 
 

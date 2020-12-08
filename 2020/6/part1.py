@@ -10,7 +10,7 @@ for group in groups:
     for ans in group:
         for c in ans:
             s.add(c)
-    
+
     res += len(s)
-    
+
 print(res)

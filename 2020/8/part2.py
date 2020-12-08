@@ -2,6 +2,7 @@ ins = []
 with open('input.txt', 'r') as f:
     ins = f.readlines()
 
+
 def terminates(replace_idx: int, replacement: str):
     i = 0
     acc = 0
@@ -11,20 +12,20 @@ def terminates(replace_idx: int, replacement: str):
 
         if i == replace_idx:
             cmd = replacement
-    
+
         if i in visited:
             return False, acc
-    
+
         visited.append(i)
-    
+
         if cmd == 'acc':
             acc += int(arg)
             i += 1
         elif cmd == 'jmp':
             i += int(arg)
         else:
-            i+=1
-    
+            i += 1
+
     return True, acc
 
 

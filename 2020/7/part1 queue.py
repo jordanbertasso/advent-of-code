@@ -30,6 +30,8 @@ def get_children(bag_type: str):
 
 pos_list = []
 neg_list = []
+
+
 def contains_gold(bag_type: str):
 
     q = Queue()
@@ -50,9 +52,10 @@ def contains_gold(bag_type: str):
                 return True
             else:
                 q.put(child)
-    
+
     neg_list.append(bag_type)
     return False
+
 
 s = set()
 for bag_type in bag_types:
