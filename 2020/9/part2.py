@@ -28,10 +28,10 @@ def contiguous_sum(target: int):
             i += 1
 
 
-def sum_smallest(s, e):
+def sum_smallest(s: int, e: int):
     return min(nums[s:e]) + max(nums[s:e])
 
 
-s, e = contiguous_sum(248131121)
+start, end = contiguous_sum(248131121)
 
-print(sum_smallest(s, e))
+print(sum_smallest(start, end))
