@@ -6,16 +6,6 @@ with open('input.txt', 'r') as f:
     nums = list(map(int, nums))
 
 
-def sum_exists(target: int, start: int, end: int):
-    pnums = nums[start:end]
-
-    for a, b in itertools.combinations(pnums, 2):
-        if a + b == target:
-            return True
-
-    return False
-
-
 def contiguous_sum(target: int):
     for i in range(len(nums)):
         acc = 0
