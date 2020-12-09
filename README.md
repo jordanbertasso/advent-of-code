@@ -10,3 +10,4 @@
 - [Day 6](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/6)
 - [Day 7](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/7)
 - [Day 8](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/8)
+- [Day 9](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/9)
