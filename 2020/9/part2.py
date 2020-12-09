@@ -1,5 +1,3 @@
-import itertools
-
 nums = []
 with open('input.txt', 'r') as f:
     nums = f.readlines()
