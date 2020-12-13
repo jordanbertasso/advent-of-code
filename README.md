@@ -11,3 +11,7 @@
 - [Day 7](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/7)
 - [Day 8](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/8)
 - [Day 9](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/9)
+- [Day 10](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/10)
+- [Day 11](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/11)
+- [Day 12](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/12)
+- [Day 13](https://github.com/jordanbertasso/advent-of-code/tree/main/2020/13)
