@@ -1,11 +1,13 @@
+import fileinput
+
 rows = []
 with open('input.txt', 'r') as f:
-    rows = list(map(str.strip, f.readlines()))
+    rows = [x.strip() for x in fileinput.input()]
 
 pos = [0, 0]
 
 trees = 0
-while pos[0] < len(rows) - 1:
+while pos[0] < len(rows):
     pos[1] %= len(rows[0])
 
     if rows[pos[0]][pos[1]] == '#':
