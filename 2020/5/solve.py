@@ -22,10 +22,10 @@ for p in passes:
     ids.append(id)
 
 max = max(ids)
+print(f'{max=}')
 
 for valid in range(max):
     if valid not in ids:
         if valid - 1 in ids and valid + 1 in ids:
-            print(f'{id=}')
+            print(f'id={valid}')
 
-print(f'{max=}')
