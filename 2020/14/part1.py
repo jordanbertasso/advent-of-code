@@ -19,15 +19,15 @@ for l in lines:
 
         for i in range(len(val)):
 
-            if mask[-i-1] == 'x':
+            if mask[-i - 1] == 'x':
                 continue
-            elif mask[-i-1] == '0':
-                val[-1-i] = '0'
-            elif mask[-i-1] == '1':
-                val[-1-i] = '1'
+            elif mask[-i - 1] == '0':
+                val[-1 - i] = '0'
+            elif mask[-i - 1] == '1':
+                val[-1 - i] = '1'
 
         mem[loc] = ''.join(val)
-    
+
 ans = 0
 for v in mem.values():
     ans += int('0b' + v, 2)

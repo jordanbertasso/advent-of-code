@@ -1,7 +1,7 @@
-import os
+from os import sys
 import re
 
-input = os.sys.stdin.read()
+input = sys.stdin.read()
 
 s = input.split('\n\n')
 rules = s[0].split('\n')
@@ -55,8 +55,6 @@ for ticket in tickets:
 res = 0
 for b in bad_vals:
     res += b
-
-print(res)
 
 position_values = {}
 for ticket in good:
