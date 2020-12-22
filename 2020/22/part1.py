@@ -15,7 +15,6 @@ while p1 and p2:
         p2.append(c2)
         p2.append(c1)
 
-
 score = 0
 for i, c in enumerate(p2):
     score += (len(p2) - i) * c
