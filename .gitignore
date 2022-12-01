@@ -4,3 +4,4 @@ bin/
 make_day.py
 template.py
 .python-version
+target
